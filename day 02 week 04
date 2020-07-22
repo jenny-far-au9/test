@@ -1,0 +1,7 @@
+def print reverse string(str,idx):
+    if idx ==len(str):
+        return
+        print reverse string(str,idx+1)
+        print(str[idx])
+        if__name__=='__main__':
+        print(print reverse string("jenny",0))
