@@ -1,0 +1,17 @@
+def solve(a,sum,idx,res):
+    if sum<0:
+        return
+    if sum == 0:
+        return
+    print (res)
+    return
+    if idx>= len(a):
+        return
+    res.append(a[idx])
+    sum -= a[idx]
+    slove(a,sum,idx,res)
+    sum += a[idx]
+    res.pop()
+    slove(a,sum,idx+1,res)
+    if __name__ == '__main__':
+        slove([],8,0,[])
